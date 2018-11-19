@@ -3,4 +3,6 @@ language: python
 python:	
 	-"2.7"
 
+install: echo "installed"
+	
 script: python pytest.py
