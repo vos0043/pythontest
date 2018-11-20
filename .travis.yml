@@ -3,3 +3,14 @@ language: python
 install: echo "installed"
 
 script: python pytest.py
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: _site
+  github_token: d73909204aaa61481a6bc681fb5d26b4d91e4729
+  keep-history: true
+  on:
+    branch: master
+  repo: vos0043/pythontest.github.io
+  target_branch: master
