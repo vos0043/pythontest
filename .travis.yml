@@ -8,9 +8,9 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: _site
-  github_token: d73909204aaa61481a6bc681fb5d26b4d91e4729
+  github_token: $GITHUB_TOKEN
   keep-history: true
   on:
     branch: master
-  repo: vos0043/pythontest.github.io
+  repo: vos0043/vos0043.github.io
   target_branch: master
